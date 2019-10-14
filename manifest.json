@@ -1,0 +1,20 @@
+{
+"name": "LH3 helper",
+"description": "lh3",
+"version": "1.0",
+"incognito": "split",
+"manifest_version": 2,
+"permissions": [
+    "activeTab"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["https://ca.libraryh3lp.com/webclient/client"],
+        "js": [ 
+          "jquery-3.4.1.js", 
+          "content.js"]
+    } 
+]
+
+}
