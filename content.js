@@ -1,17 +1,15 @@
 // content.js
 //alert("Hello from your Chrome extension!")
 
-window.addEventListener('load', function () {
+$(window).on('load', function() {
+    setTimeout(function() {
 
-    var sel = $(".dropdown.open.btn-group.btn-group-default")
-    
-    sel.css("background-color","blue");
+    var staffclient = $("#v-split-52 > div.display-flex.re-v-split-top > div > nav > div > div > div:nth-child(1)");
+    var inputMessageBar = $("#v-split-52 > div.display-flex.re-v-split-top > div > nav > div > div > div:nth-child(2)");
 
-    //if ($("#user-show-dropdown-button > div > span").firstElementChild.alt =="busy"){}
-
-    $("#user-show-dropdown-button > div > span").change(function () {
-        console.log("change");
-    });
+    list = staffclient.parentElement;
+    list.insertBefore(inputMessageBar, staffclient);
 
 
+    }, 2000);
 });
