@@ -2,7 +2,7 @@
 An extension to swap the status bar emplacement and to blink the status bar select box when this one is in Busy mode
 
 
-![Screenshot](pictures/image.png)
+![Screenshot](image.png)
 
 # todo
 1. Blink Dropdown select box when Availability is on 'Busy'
